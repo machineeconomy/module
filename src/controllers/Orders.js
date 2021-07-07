@@ -9,7 +9,7 @@ const CUSTOM_SCRIPT = process.env.CUSTOM_SCRIPT
 const iotaCore = require('@iota/core')
 
 // Local node to connect to;
-const provider = 'https://nodes.devnet.thetangle.org:443';
+const provider = process.env.IOTA_NODE;
 
 const iota = iotaCore.composeAPI({
     provider: provider
